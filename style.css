@@ -19,10 +19,6 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-header {
-    padding: 0 1em;
-}
-
 main {
     border-radius: 4px;
     background-color: hsl(244, 38%, 16%);
@@ -32,8 +28,24 @@ img {
     max-width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    
 }
+
+.tint {
+    position: relative;
+    float: left;
+    margin-bottom: 2.5em;
+  }
+
+.tint::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 4px;
+    left: 0;
+    right: 0;
+    background: hsla(277, 80%, 40%, 0.6);
+  }
 
 h2 {
     color: hsl(0, 0%, 100%);
@@ -70,7 +82,7 @@ section {
 }
 
 .content {
-    padding: 2em;
+    padding: 0 2em;
 }
 
 .stats {
